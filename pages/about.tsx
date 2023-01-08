@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-
-import NavBar from "../components/nav";
 import Footer from "../components/footer";
 import NavBarTwo from "../components/nav2";
 
@@ -23,23 +21,22 @@ const About = () => {
         </h1>
         <div className="flex flex-row  max-w-md text-base text-gray-900 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
           <div className="pb-[22rem] pl-3 w-screen">
-            <div className="inline text-[#e81017]">Beyond consulting</div> a
-            partner for transformation and growth. Open Source Policy and
-            Community Development Support – Altech technologists and engineers
-            are active contributors and advocates supporting the Open Source
-            Policy and Community Development.{" "}
+            Hi, my name is <div className="inline text-[#e81017]">Salah</div>! I
+            grew up in Chicago&apos;s inner city before moving to the suburbs
+            where I am now. I am also a big fan of European football(soccer)
+            via Juventus. I have worked as a Starbucks barista and an Uber
+            driver. Both these job experiences have been dear to me as they have taught me to communicate and taught me how meaningful interactions with my fellow humans are. I love
+            Pokemon, I LOVE The Office, and most importantly I love technology!{" "}
             <div className=" bg-white ">
               <p className="mt-4 text-gray-800">
                 {" "}
-                Our efforts across various projects (
+                I have had the pleasure of working at various tech companies such as 
                 <div className="text-[#e81017] inline">
-                  DARPA<p className="inline text-gray-900">,</p> JPL
-                  <p className="inline text-gray-900">,</p> NASA
+                {" "}Zero Grocery<p className="inline text-gray-900">,</p>{" "}
+                  Launchgood
+                  <p className="inline text-gray-900">,</p> Consilient{" "}
                 </div>
-                ) have advanced the use of state-of-the-art open source
-                practices for the government sector and enhanced the it
-                prevalence in terms of use, understanding, and community
-                development.{" "}
+                These experiences have been critical to my technical and professional growth.{" "}
               </p>
             </div>
           </div>
