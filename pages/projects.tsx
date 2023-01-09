@@ -2,6 +2,7 @@ import NewCard from "../components/card";
 import React, { useState, useEffect } from "react";
 import Footer from "../components/footer";
 import NavBarTwo from "../components/nav2";
+import Head from "next/head";
 
 const Projects = () => {
   const [mounted, setMounted] = useState(false);
