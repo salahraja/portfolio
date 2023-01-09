@@ -56,7 +56,7 @@ const Home = () => {
               ></div>
             </div>
             <div className="w-full flex flex-col justify-center pr-9 py-8">
-              <p className="text-gray-900 text-lg whitespace-pre-wrap tracking-wide leading-snug font-extralight sm:w-full xs:w-full">
+              <p className="w-max-md text-gray-900 text-lg whitespace-pre-wrap tracking-wide leading-snug font-extralight sm:w-full xs:w-full">
                 Welcome to my portfolio website! I am a junior software engineer
                 with a passion for problem-solving and creating innovative
                 solutions. On this site, you will find a selection of my
@@ -72,15 +72,16 @@ const Home = () => {
                 software engineer. Thank you for visiting my website. If you
                 have any questions or would like to discuss potential
                 opportunities, please don&apos;t hesitate to contact me.
-                <div className="pt-9"></div>
-                Thanks
-              </p>
+                <div className="pt-[13vh] max-w-[17vw] font-semibold flex justify-start tracking-tighter text-left">
+                “Kind souls have kind faces. What you instill in your soul, appears on your face.” 
+              </div>
+              </p><p className=" text-left whitespace-nowrap">- Mohammed Alrotayyan</p>
             </div>
           </div>
         </div>
         <div>
           <h1 className="text-3xl font-light grid grid-cols-2 gap-4 pl-[26rem] place-content-center h-[5rem] relative">
-          &rdquo;I&apos;m a Frontend Developer&rdquo;
+          {/* &rdquo;I&apos;m a Frontend Developer&rdquo; */}
           </h1>
           {/* <p>Hi</p><div className="mt-3 flex flex-col justify-center"></div> */}
         </div>
