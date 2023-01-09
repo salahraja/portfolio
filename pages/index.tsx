@@ -15,6 +15,10 @@ const Home = () => {
 
   return (
     <>
+     <Head>
+      <title>Salah&apos;s Website</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
       <div className="fixed">
         <NavBar />
         <Link href={"/"}>
@@ -72,7 +76,7 @@ const Home = () => {
                 software engineer. Thank you for visiting my website. If you
                 have any questions or would like to discuss potential
                 opportunities, please don&apos;t hesitate to contact me.
-                <div className="pt-[13vh] max-w-[17vw] font-semibold flex justify-start tracking-tighter text-left">
+                <div className="pt-[19vh] max-w-[17vw] font-semibold flex justify-start tracking-tighter text-left">
                 “Kind souls have kind faces. What you instill in your soul, appears on your face.” 
               </div>
               </p><p className=" text-left whitespace-nowrap">- Mohammed Alrotayyan</p>
