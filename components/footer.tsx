@@ -55,11 +55,15 @@ export default function Footer() {
             <span className="text-base font-bold tracking-wide text-gray-900">
               Social
             </span>
-            <div className="flex items-center mt-1 space-x-3"></div>
-            <p className="mt-4 text-sm text-gray-500">
-              Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-              spare ribs salami.
-            </p>
+            <div className="flex items-center mt-1 space-x-3">
+              <Link href={"https://www.linkedin.com/in/salahraja/"}>
+                LinkedIn
+            </Link>
+            <Link href={"https://github.com/salahraja"}>
+                GitHub
+            </Link>
+            </div>
+            
           </div>
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">

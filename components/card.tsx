@@ -4,14 +4,16 @@ import Link from "next/link";
 
 export default function NewCard() {
   return (
-    <div className="max-w-[41rem] max-h-[22rem] bg-white border border-gray-200 rounded-lg shadow-md">
+    <div className="flex p-3">
+    <div className=" bg-white border border-gray-200 rounded-lg shadow-md flex flex-col p-8">
       <Link href={"/"}>
-        <div className="h-[32vh] w-[36vw]">
-        <Image src="/singlselect.png"
-         alt="Altech logo" 
-         width={530} 
-         height={145} />
-</div>
+        
+          <Image
+            src="/singlselect.png"
+            alt=""
+            width={690}
+            height={445}
+          />
       </Link>
       <div className="p-5">
         <Link href={"/"}>
@@ -25,7 +27,9 @@ export default function NewCard() {
         </p>
         <Link href={"https://darling-longma-eb7d58.netlify.app"}>
           <div className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#e81017] rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300">
-          <a target="_blank" rel="noopener noreferrer">Link</a>
+            <a target="_blank" rel="noopener noreferrer">
+              Link
+            </a>
             <svg
               aria-hidden="true"
               className="w-4 h-4 ml-2 -mr-1"
@@ -42,6 +46,6 @@ export default function NewCard() {
           </div>
         </Link>
       </div>
-    </div>
+    </div></div>
   );
 }
