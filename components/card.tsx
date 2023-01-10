@@ -10,7 +10,7 @@ export default function NewCard() {
         
           <Image
             src="/singlselect.png"
-            alt=""
+            alt="Email+Password login screenshot for my project"
             width={690}
             height={445}
           />
@@ -18,12 +18,11 @@ export default function NewCard() {
       <div className="p-5">
         <Link href={"/"}>
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
-            Multi-Step
+            Multi-Step Registration
           </h5>
         </Link>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
+          Using Vite with TypeScript and React I&apos;ve created a Multi-selection and stepped form for registration!
         </p>
         <Link href={"https://darling-longma-eb7d58.netlify.app"}>
           <div className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#e81017] rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300">
