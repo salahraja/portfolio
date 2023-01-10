@@ -21,8 +21,9 @@ const Projects = () => {
           <span className="block xl:inline">My</span>{" "}
           <span className="block text-gray-900">Projects.</span>
         </h1>
-        <div className="pt-[5vh]">
-        <NewCard /></div>
+        <div className="pt-[5vh] w-[42vw]">
+        <NewCard />
+        </div>
       </div>
       <Footer />
     </>

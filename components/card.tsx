@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function NewCard() {
   return (
-    <div className="max-w-[37vw] max-h-[] bg-white border border-gray-200 rounded-lg shadow-md">
+    <div className="max-w-[41rem] max-h-[22rem] bg-white border border-gray-200 rounded-lg shadow-md">
       <Link href={"/"}>
         <div className="h-[32vh] w-[36vw]">
         <Image src="/singlselect.png"

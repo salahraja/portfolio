@@ -8,13 +8,27 @@ function NavBar() {
       <nav className="font-sans flex py-2 px-6 bg-white bg-opacity-30 backdrop-blur-sm rounded-sm shadow sm:items-baseline w-5/6">
         <div className="pt-3 grid grid-cols-3 font-semibold w-full text-center">
           <div className="h-10 pt-3 ml-auto flex col-auto w-screen max-[640px]:w-2vw] whitespace-nowrap font-semibold">
-            <div className="flex justify-center w-[80.5vw] pl-[5vw]">
-            
-              <div className="space-x-3 -m-[1vh] w-full align-center">
+            <div className="flex justify-start w-[80.5vw] ">
+            <Link href={"/"}><div className="h-full flex">
+                  
+                  
+                  
+                </div></Link>
+              <div className="space-x-3 -m-[1vh] w-full align-center flex flex-row">
+              <Link href={"/"}><div className="h-full flex pb-4">
+                  
+                  <Image
+                    src="/homesmile.svg"
+                    alt="LinkedIn logo"
+                    width={40}
+                    height={35}
+                  />
+                
+              </div></Link><div className="w-full">
+                <div className="flex flex-row justify-center space-x-3">
                 <Link href={"/about"}>About Me</Link>
-                <Link href={"/projects"}>
-                  Projects
-                </Link>
+                <Link href={"/projects"}>Projects</Link>
+                </div></div>
               </div>
               <div className="-m-[1vh] flex flex-row flex-grow">
                 <Link href={"https://www.linkedin.com/"}>
@@ -29,7 +43,7 @@ function NavBar() {
                 </Link>
       
                 <Link href={"https://github.com/salahraja"}>
-                  <div className="pr-9">
+                  <div className="pr-9 max-[640px]:pb-[.09rem]">
                     <Image
                       src="/github.svg"
                       alt="Github logo"

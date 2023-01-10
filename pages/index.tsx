@@ -40,15 +40,15 @@ const Home = () => {
         <div className="text-center">
           <div>
             <h1 className="text-4xl mb-2 font-bold tracking-tight text-[#e81017] sm:text-5xl md:text-6xl">
-              <span className="max-[640px]:pt-[8vh] block xl:inline ">My</span>{" "}
+              <span className="max-[640px]:pt-[9.7vh] block xl:inline ">My</span>{" "}
               <span className="block">
                 Portfolio<div className="inline text-black">.</div>
               </span>
-            </h1> <div className="text-center max-[638px]:bg-sky-300 whitespace-nowrap inline-block max-w-md text-base text-gray-900 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
+            </h1> <div className="text-center whitespace-nowrap inline-block max-w-sm text-base text-gray-900 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
             <div className="inline text-light">
               &quot;Michael always says K-I-S-S. Keep it simple, stupid.&quot;
-            </div>{" "}
-            —<div className="text-[#e81017]"> Dwight K. Schrute</div>
+            </div>
+            <div className="text-[#e81017]"><div className="text-black inline">{"— "} </div>Dwight K. Schrute</div>
           </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ const Home = () => {
                 aria-hidden="true"
               ></div>
             </div>
-            <div className="w-full flex flex-col justify-center text-center pr-9 py-8">
+            <div className="w-full flex flex-col justify-center text-center pr-3 py-8">
               <p className="w-max-md text-gray-900 text-lg whitespace-pre-wrap tracking-wide leading-snug font-extralight sm:w-full xs:w-full">
                 Welcome to my portfolio website! I am a junior software engineer
                 with a passion for problem-solving and creating innovative
