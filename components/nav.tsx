@@ -16,7 +16,7 @@ function NavBar() {
                 </Link>
               </div>
               <div className="-m-[1vh] flex flex-row flex-grow">
-                <Link href={"https://www.linkedin.com/"}>
+                <Link href={"https://www.linkedin.com/in/salahraja/"}>
                   <div className="px-2">
                     <Image
                       src="/linkedin.svg"
