@@ -13,13 +13,13 @@ const Projects = () => {
 
   return (
     <>
-      <div className="pb-[6rem]">
+      <div className="pb-[6rem] dark:bg-black bg-white">
         <NavBarTwo />
       </div>
-      <div className="">
+      <div className="dark:bg-black bg-white">
         <h1 className="text-4xl pl-2 font-bold  text-[#e81017] sm:text-5xl md:text-6xl">
           <span className="block xl:inline">My</span>{" "}
-          <span className="block text-gray-900">Projects.</span>
+          <span className="block text-gray-900 dark:text-white">Projects.</span>
         </h1>
         <NewCard />
       </div>

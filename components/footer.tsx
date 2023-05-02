@@ -14,7 +14,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <section className="relative ">
+    <section className="relative bg-white dark:bg-black">
       <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 max-[640px]:hidden">
@@ -24,9 +24,11 @@ export default function Footer() {
 
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm text-gray-800">
-                I&apos;m a Frontend Developer with 2 years experience. I was born in Pakistan & moved to the US at 4 years old. I grew up in Chicago&apos;s inner city before moving to the
-                suburbs where I am now. I love Pokemon, I LOVE The Office, and
-                most importantly I love technology!
+                I&apos;m a Frontend Developer with 2 years experience. I was
+                born in Pakistan & moved to the US at 4 years old. I grew up in
+                Chicago&apos;s inner city before moving to the suburbs where I
+                am now. I love Pokemon, I LOVE The Office, and most importantly
+                I love technology!
               </p>
               <p className="mt-4 text-sm text-gray-800">
                 I first coded in Java at about 11 years old. Since then
@@ -58,12 +60,9 @@ export default function Footer() {
             <div className="flex items-center mt-1 space-x-3">
               <Link href={"https://www.linkedin.com/in/salahraja/"}>
                 LinkedIn
-            </Link>
-            <Link href={"https://github.com/salahraja"}>
-                GitHub
-            </Link>
+              </Link>
+              <Link href={"https://github.com/salahraja"}>GitHub</Link>
             </div>
-            
           </div>
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
