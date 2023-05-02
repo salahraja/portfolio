@@ -5,7 +5,7 @@ import Link from "next/link";
 function NavBar() {
   return (
     <div className="flex fixed flex-row justify-center">
-      <nav className="font-sans flex py-2 px-6 bg-white dark:bg-zinc-800/30 bg-opacity-40 backdrop-blur-sm rounded-sm shadow sm:items-baseline w-5/6">
+      <nav className="font-sans flex py-2 px-6 bg-white  dark:bg-zinc-800/30 bg-opacity-40 backdrop-blur-sm rounded-sm shadow sm:items-baseline w-5/6">
         <div className="pt-3 grid grid-cols-3 font-semibold w-full text-center">
           <div className="h-10 pt-3 ml-auto flex col-auto w-screen max-[640px]:w-2vw] whitespace-nowrap font-semibold">
             <div className="flex justify-start w-[80.5vw] ">
@@ -25,7 +25,7 @@ function NavBar() {
                   </div>
                 </Link>
                 <div className="w-full">
-                  <div className="dark:text-white flex flex-row justify-center space-x-3">
+                  <div className="dark:text-white text-black flex flex-row justify-center space-x-3">
                     <Link href={"/about"}>About Me</Link>
                     <Link href={"/projects"}>Projects</Link>
                   </div>
