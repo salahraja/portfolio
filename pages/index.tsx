@@ -19,10 +19,10 @@ const Home = () => {
         <title>Salah&apos;s Website</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="fixed dark:bg-black bg-white">
+      <div className="dark:bg-black bg-white max-[1100px]:font-bold">
         <NavBar />
         <Link href={"/"}>
-          <div className="col-span-1 -mt-[7vh] ">
+          <div className="col-span-1 -mt-[7vh]">
             <div className="max-[640px]:h-[1px] max-[640px]:w-[8vw]">
               <Image
                 src="/clearsalah.png"
@@ -35,27 +35,29 @@ const Home = () => {
         </Link>
 
         <div className="">
-          <div className="w-full xs:h-[550px] lg:h-[220px] md:h-[200px] sm:h-[200px]"></div>
+          <div className="w-screen xs:h-[550px] lg:h-[220px] md:h-[200px] sm:h-[200px] md:-m-[144px]"></div>
 
-          <div className="text-center">
+          <div className="text-center ">
             <div>
-              <h1 className="text-4xl mb-2 font-bold tracking-tight text-[#e81017] sm:text-5xl md:text-6xl">
-                <span className="max-[640px]:pt-[9.7vh] block xl:inline ">
-                  My
-                </span>{" "}
-                <span className="block">
-                  Portfolio<div className="inline text-black">.</div>
-                </span>
-              </h1>{" "}
+              <div className="pl-6">
+                <h1 className="text-4xl text-center mb-2 font-bold tracking-tight text-[#e81017] sm:text-5xl md:text-6xl">
+                  <span className="max-[640px]:pt-[9.7vh] block xl:inline ">
+                    My
+                  </span>{" "}
+                  <span className="block">
+                    Portfolio<div className="inline text-black">.</div>
+                  </span>
+                </h1>{" "}
+              </div>
               <div className="text-center whitespace-nowrap inline-block max-w-sm text-base text-gray-900 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
                 <div className="inline text-light dark:text-white">
                   &quot;Michael always says K-I-S-S. Keep it simple,
                   stupid.&quot;
                 </div>
-                <div className="text-[#e81017]">
-                  <div className="text-black inline">{"— "} </div>Dwight K.
-                  Schrute
-                </div>
+              </div>
+              <div className="text-[#e81017]">
+                <div className="text-black inline">{"— "} </div>Dwight K.
+                Schrute
               </div>
             </div>
           </div>
@@ -69,8 +71,9 @@ const Home = () => {
                   aria-hidden="true"
                 ></div>
               </div>
-              <div className="w-full flex flex-col justify-center text-center pr-3 py-8">
-                <p className="w-max-md text-gray-900 dark:text-white text-lg whitespace-pre-wrap tracking-wide leading-snug font-extralight sm:w-full xs:w-full">
+              <div className="w-screen flex flex-col justify-center text-center pr-3 py-8">
+                {/* The issue below is a stopgap fix it */}
+                <p className="w-screen max-[1100px]:px-[42px] max-[1100px]:font-bold text-gray-900 dark:text-white text-lg whitespace-pre-wrap tracking-wide leading-snug font-extralight sm:w-full xs:w-full">
                   Welcome to my portfolio website! I am a junior software
                   engineer with a passion for problem-solving and creating
                   innovative solutions. On this site, you will find a selection
