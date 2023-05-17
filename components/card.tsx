@@ -66,8 +66,9 @@ export default function NewCard() {
             </h5>
           </Link>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Using Vite with TypeScript and React I&apos;ve created a
-            Multi-selection and stepped form for registration!
+            Using Next.js and TailwinCSS with TypeScript and React I&apos;ve
+            made a website tracking the table and latest match fixtures for
+            Italy&apos;s top football league, Serie A.
           </p>
           <Link
             href={"https://football-scores-eo9m5m6d5-salahraja.vercel.app/"}
