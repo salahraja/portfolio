@@ -48,7 +48,7 @@ export default function NewCard() {
         </div>
       </div>
       <div className=" dark:bg-black bg-white border border-gray-200 rounded-lg shadow-md flex flex-col p-8">
-        <Link href={"https://football-scores-eo9m5m6d5-salahraja.vercel.app/"}>
+        <Link href={"https://football-scores-seven.vercel.app/"}>
           <Image
             src="/serieasite.png"
             alt="Email+Password login screenshot for my project"
@@ -58,9 +58,7 @@ export default function NewCard() {
           />
         </Link>
         <div className="p-5">
-          <Link
-            href={"https://football-scores-eo9m5m6d5-salahraja.vercel.app/"}
-          >
+          <Link href={"https://football-scores-seven.vercel.app/"}>
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Serie A website
             </h5>
@@ -70,9 +68,7 @@ export default function NewCard() {
             made a website tracking the table and latest match fixtures for
             Italy&apos;s top football league, Serie A.
           </p>
-          <Link
-            href={"https://football-scores-eo9m5m6d5-salahraja.vercel.app/"}
-          >
+          <Link href={"https://football-scores-seven.vercel.app/"}>
             <div className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#e81017] rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300">
               <a target="_blank" rel="noopener noreferrer">
                 Link
