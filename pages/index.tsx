@@ -46,7 +46,7 @@ const Home = () => {
                     Assalaamalaikum & hello!
                   </h2>{" "}
                   <span className="block pt-10">
-                    Im Salah & I build for
+                    I&apos;m Salah & I build in
                     <div className="inline text-black">.</div>
                   </span>
                   <TypeWriter />

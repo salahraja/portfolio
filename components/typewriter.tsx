@@ -8,13 +8,17 @@ function TypeWriter() {
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "The <i>web</i>.",
+        "Typescript.",
         "&amp; TailwindCSS.",
         "&amp; Next.js.",
-        "&amp; Typescript.",
         "&amp; React.",
+        "The <i>web</i>.",
       ],
       typeSpeed: 50,
+      smartBackspace: true,
+      fadeOut: true,
+      fadeOutClass: "typed-fade-out",
+      fadeOutDelay: 500,
     });
 
     return () => {
