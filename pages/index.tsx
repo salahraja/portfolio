@@ -42,7 +42,7 @@ const Home = () => {
             <div>
               <div className="pl-6">
                 <h1 className="text-4xl text-center mb-2 font-bold tracking-tight dark:text-[#f5f5f5] text-[#353935] sm:text-5xl md:text-6xl">
-                  <h2 className="max-[640px]:pt-[9.7vh] block xl:inline">
+                  <h2 className="max-[640px]:pt-[9.7vh] block xl:inline motion-safe:animate-fadeIn">
                     Assalaamalaikum & hello!
                   </h2>{" "}
                   <span className="block pt-10">
@@ -76,15 +76,14 @@ const Home = () => {
                   aria-hidden="true"
                 ></div>
               </div>
-              <div className="w-screen flex flex-col justify-center text-center pr-3 py-8">
-                {/* The issue below is a stopgap fix it */}
-                <p className="w-screen max-[1100px]:px-[42px] max-[1100px]:font-bold text-gray-900 dark:text-white text-lg whitespace-pre-wrap tracking-wide leading-snug font-extralight sm:w-full xs:w-full">
+              <div className="flex h-1/2 flex-col justify-center text-center pr-3 py-8">
+                <p className="mx-auto max-w-[20rem] max-[1100px]:px-[42px] max-[1100px]:font-bold text-gray-900 dark:text-white text-lg whitespace-pre-wrap tracking-wide leading-snug font-extralight sm:w-full xs:w-full">
                   Welcome to my portfolio website! I am a junior software
                   engineer with a passion for problem-solving and creating
                   innovative solutions. On this site, you will find a selection
                   of my projects and technical skills. I have a strong
                   foundation in software development and QA testing, with
-                  experience working on TailwindCSS, Typescript, Next.js,
+                  experience working on Tailwind CSS, TypeScript, Next.js,
                   Node.js, among others.
                   <div className="pt-9"></div>I am constantly learning and
                   expanding my skillset, and am always looking for new
