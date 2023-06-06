@@ -20,10 +20,13 @@ const Home = () => {
         <title>Salah&apos;s Website</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="dark:bg-black bg-white max-[1100px]:font-bold">
-        <NavBar />
+      <div className="dark:bg-black bg-[#F5EDDD] max-[1100px]:font-bold">
+        <div className="">
+          {" "}
+          <NavBar />
+        </div>
         <Link href={"/"}>
-          <div className="col-span-1 -mt-[7vh]">
+          <div className="col-span-1 mt-[1rem]">
             <div className="max-[640px]:h-[1px] max-[640px]:w-[8vw]">
               <Image
                 src="/clearsalah.png"
