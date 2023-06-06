@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import NavBar from "../components/nav";
 import Footer from "../components/footer";
 import Link from "next/link";
+import TypeWriter from "../components/typewriter";
 
 const Home = () => {
   const [mounted, setMounted] = useState(false);
@@ -40,24 +41,28 @@ const Home = () => {
           <div className="text-center ">
             <div>
               <div className="pl-6">
-                <h1 className="text-4xl text-center mb-2 font-bold tracking-tight text-[#e81017] sm:text-5xl md:text-6xl">
-                  <span className="max-[640px]:pt-[9.7vh] block xl:inline ">
-                    My
-                  </span>{" "}
-                  <span className="block">
-                    Portfolio<div className="inline text-black">.</div>
+                <h1 className="text-4xl text-center mb-2 font-bold tracking-tight dark:text-[#f5f5f5] text-[#353935] sm:text-5xl md:text-6xl">
+                  <h2 className="max-[640px]:pt-[9.7vh] block xl:inline">
+                    Assalaamalaikum & hello!
+                  </h2>{" "}
+                  <span className="block pt-10">
+                    Im Salah & I build for
+                    <div className="inline text-black">.</div>
                   </span>
+                  <TypeWriter />
                 </h1>{" "}
               </div>
               <div className="text-center whitespace-nowrap inline-block max-w-sm text-base text-gray-900 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
-                <div className="inline text-light dark:text-white">
+                <div className="inline text-light dark:text-[#f5f5f5]">
                   &quot;Michael always says K-I-S-S. Keep it simple,
                   stupid.&quot;
                 </div>
               </div>
-              <div className="text-[#e81017]">
-                <div className="text-black inline">{"— "} </div>Dwight K.
-                Schrute
+              <div className="dark:text-[#f5f5f5] text-[#353935]">
+                <div className="dark:text-[#f5f5f5] text-[#353935] inline">
+                  {"— "}{" "}
+                </div>
+                Dwight K. Schrute
               </div>
             </div>
           </div>
