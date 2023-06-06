@@ -42,7 +42,7 @@ export default function Footer() {
               Contact
             </p>
 
-            <div className="flex text-black">
+            <div className="flex text-black dark:text-white">
               <p className="mr-1 text-gray-800 dark:text-white">Email:</p>
               <Link href={"mailto:beanies-vantage03@icloud.com"}>
                 Email Me!
