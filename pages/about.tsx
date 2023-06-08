@@ -14,7 +14,7 @@ const About = () => {
       <div className="pb-[6rem] dark:bg-black bg-[#F5EDDD]">
         <NavBarTwo />
       </div>
-      <div className="dark:bg-black bg-[#F5EDDD]">
+      <div className="dark:bg-black bg-[#F5EDDD] flex flex-col items-center">
         <h1 className="text-4xl pl-2 font-bold  text-[#e81017] sm:text-5xl md:text-6xl">
           <span className="block xl:inline">About</span>{" "}
           <span className="block text-gray-900 dark:text-white">Me.</span>

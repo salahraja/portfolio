@@ -4,15 +4,15 @@ import Link from "next/link";
 
 export default function NewCard() {
   return (
-    <div className="flex space-x-4 p-3 pr-4 dark:bg-black bg-white">
-      <div className=" dark:bg-black bg-white border border-gray-200 rounded-lg shadow-md flex flex-col p-8">
+    <div className="flex space-x-4 p-3 pr-4 dark:bg-black bg-[#F5EDDD]">
+      <div className=" dark:bg-black bg-[#F5EDDD] border border-gray-200 rounded-lg shadow-md flex flex-col p-8">
         <Link href={"https://darling-longma-eb7d58.netlify.app"}>
           <Image
             src="/singlselect.png"
             alt="Email+Password login screenshot for my project"
             width={690}
             height={445}
-            className="invert"
+            className="invert-0 rounded-lg"
           />
         </Link>
         <div className="p-5">
@@ -47,7 +47,7 @@ export default function NewCard() {
           </Link>
         </div>
       </div>
-      <div className=" dark:bg-black bg-white border border-gray-200 rounded-lg shadow-md flex flex-col p-8">
+      <div className=" dark:bg-black bg-[#F5EDDD] border border-gray-200 rounded-lg shadow-md flex flex-col p-8">
         <Link href={"https://football-scores-seven.vercel.app/"}>
           <Image
             src="/serieasite.png"
