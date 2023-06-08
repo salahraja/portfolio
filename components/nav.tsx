@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function NavBar() {
   return (
-    <div className="flex flex-row justify-center">
+    <div className="flex flex-row justify-center z-10">
       <nav className="font-sans flex fixed py-2 px-6 bg-[#F5EDDD] dark:bg-zinc-800/30 bg-opacity-40 backdrop-blur-sm rounded-b-lg shadow sm:items-baseline w-5/6">
         <div className="grid grid-cols-3 font-semibold w-full text-center">
           <div className="h-[6vh] ml-auto flex col-auto w-auto  whitespace-nowrap font-semibold">

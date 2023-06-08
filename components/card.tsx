@@ -26,7 +26,7 @@ export default function NewCard() {
             Multi-selection and stepped form for registration!
           </p>
           <Link href={"https://darling-longma-eb7d58.netlify.app"}>
-            <div className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#e81017] rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300">
+            <div className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#58A4B0] rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300">
               <a target="_blank" rel="noopener noreferrer">
                 Link
               </a>
@@ -69,7 +69,7 @@ export default function NewCard() {
             Italy&apos;s top football league, Serie A.
           </p>
           <Link href={"https://football-scores-seven.vercel.app/"}>
-            <div className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#e81017] rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300">
+            <div className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#58A4B0] rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300">
               <a target="_blank" rel="noopener noreferrer">
                 Link
               </a>

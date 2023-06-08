@@ -15,13 +15,13 @@ const About = () => {
         <NavBarTwo />
       </div>
       <div className="dark:bg-black bg-[#F5EDDD] flex flex-col items-center">
-        <h1 className="text-4xl pl-2 font-bold  text-[#e81017] sm:text-5xl md:text-6xl">
+        <h1 className="text-4xl pl-2 font-bold  text-[#58A4B0] sm:text-5xl md:text-6xl">
           <span className="block xl:inline">About</span>{" "}
           <span className="block text-gray-900 dark:text-white">Me.</span>
         </h1>
         <div className="flex flex-row  max-w-md text-base text-gray-900 dark:text-white sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
           <div className="pb-[22rem] pl-3 w-screen">
-            Hi, my name is <div className="inline text-[#e81017] ">Salah</div>!
+            Hi, my name is <div className="inline text-[#58A4B0] ">Salah</div>!
             I grew up in Chicago&apos;s inner city before moving to the suburbs
             where I am now. I am also a big fan of European football(soccer) via
             Juventus. I have worked as a Starbucks barista and an Uber driver.
@@ -34,11 +34,17 @@ const About = () => {
                 {" "}
                 I have had the pleasure of working at various tech companies
                 such as
-                <div className="text-[#e81017] inline">
+                <div className="text-[#58A4B0] inline">
                   {" "}
-                  Zero Grocery<p className="inline text-gray-900">,</p>{" "}
+                  Zero Grocery
+                  <p className="inline text-gray-900">
+                    <span className="text-white">,</span>
+                  </p>{" "}
                   Launchgood
-                  <p className="inline text-gray-900">,</p> Consilient{" "}
+                  <p className="inline text-gray-900">
+                    <span className="text-white">,</span>
+                  </p>{" "}
+                  Consilient{" "}
                 </div>
                 These experiences have been critical to my technical and
                 professional growth.{" "}

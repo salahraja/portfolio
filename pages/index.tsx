@@ -24,8 +24,9 @@ const Home = () => {
         <div className="">
           {" "}
           <NavBar />
-        </div>
+        </div>{" "}
         <Link href={"/"}>
+          {" "}
           <div className="col-span-1 mt-[1rem]">
             <div className="max-[640px]:h-[1px] max-[640px]:w-[8vw]">
               <Image
@@ -35,20 +36,20 @@ const Home = () => {
                 height={145}
               />
             </div>
-          </div>
-        </Link>
-
+          </div>{" "}
+        </Link>{" "}
         <div className="">
-          <div className="w-screen xs:h-[550px] lg:h-[220px] md:h-[200px] sm:h-[200px] md:-m-[144px]"></div>
-
-          <div className="text-center ">
+          {" "}
+          <div className="w-screen xs:h-[550px] lg:h-[220px] md:h-[200px] sm:-mt-[91px] md:-m-[144px]"></div>
+          <div className="text-center mt-10">
+            {" "}
             <div>
               <div className="pl-6">
                 <h1 className="text-4xl text-center mb-2 font-bold tracking-tight dark:text-[#f5f5f5] text-[#353935] sm:text-5xl md:text-6xl">
-                  <h2 className="max-[640px]:pt-[9.7vh] block xl:inline motion-safe:animate-fadeIn">
+                  <h2 className="max-[640px]:mt-[14.7vh] block xl:inline motion-safe:animate-fadeIn ">
                     Assalaamalaikum & hello!
                   </h2>{" "}
-                  <span className="block pt-10">
+                  <span className="block md:pb-10">
                     I&apos;m Salah & I build in
                     <div className="inline text-black">.</div>
                   </span>

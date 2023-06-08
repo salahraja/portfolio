@@ -19,7 +19,7 @@ const Projects = () => {
         </span>
       </div>
       <div className="dark:bg-black bg-[#F5EDDD]">
-        <h1 className="text-4xl pl-2 font-bold  text-[#e81017] sm:text-5xl md:text-6xl">
+        <h1 className="text-4xl pl-2 font-bold  text-[#58A4B0] sm:text-5xl md:text-6xl">
           <span className="block xl:inline">My</span>{" "}
           <span className="block text-gray-900 dark:text-white">Projects.</span>
         </h1>
