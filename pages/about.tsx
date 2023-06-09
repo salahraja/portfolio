@@ -15,9 +15,9 @@ const About = () => {
         <NavBarTwo />
       </div>
       <div className="dark:bg-black bg-[#F5EDDD] flex flex-col items-center">
-        <h1 className="text-4xl pl-2 font-bold  text-[#58A4B0] sm:text-5xl md:text-6xl">
-          <span className="block xl:inline">About</span>{" "}
-          <span className="block text-gray-900 dark:text-white">Me.</span>
+        <h1 className="text-4xl pl-2 font-bold pb-5 text-[#58A4B0] sm:text-5xl md:text-6xl">
+          <span className="inline xl:inline">About</span>{" "}
+          <span className="inline text-gray-900 dark:text-white ">Me.</span>
         </h1>
         <div className="flex flex-row  max-w-md text-base text-gray-900 dark:text-white sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
           <div className="pb-[22rem] pl-3 w-screen">
