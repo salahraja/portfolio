@@ -20,7 +20,7 @@ const Home = () => {
         <title>Salah&apos;s Website</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="dark:bg-black bg-[#F5EDDD] max-[1100px]:font-bold">
+      <div className="dark:bg-[#1B1B1E] bg-[#F5EDDD] max-[1100px]:font-bold">
         <div className="">
           {" "}
           <NavBar />
@@ -28,7 +28,7 @@ const Home = () => {
         <Link href={"/"}>
           {" "}
           <div className="col-span-1 mt-[1rem]">
-            <div className="max-[640px]:h-[1px] max-[640px]:w-[8vw]">
+            <div className="max-[640px]:h-[1px] max-[640px]:w-[4vw] sm:max-w-[4vw] md:max-w-[8vw]">
               <Image
                 src="/clearsalah.png"
                 alt="Hand drawn full body avatar of me in hoody & jeans with glasses & Kufi"

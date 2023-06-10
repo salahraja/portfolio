@@ -11,10 +11,10 @@ const About = () => {
 
   return (
     <>
-      <div className="pb-[6rem] dark:bg-black bg-[#F5EDDD]">
+      <div className="pb-[6rem] dark:bg-[#1B1B1E] bg-[#F5EDDD]">
         <NavBarTwo />
       </div>
-      <div className="dark:bg-black bg-[#F5EDDD] flex flex-col items-center">
+      <div className="dark:bg-[#1B1B1E] bg-[#F5EDDD] flex flex-col items-center">
         <h1 className="text-4xl pl-2 font-bold pb-5 text-[#58A4B0] sm:text-5xl md:text-6xl">
           <span className="inline xl:inline">About</span>{" "}
           <span className="inline text-gray-900 dark:text-white ">Me.</span>
@@ -30,7 +30,7 @@ const About = () => {
             fellow humans are. I love Pokemon, I LOVE The Office, and most
             importantly I love technology!{" "}
             <div className=" bg-white ">
-              <p className="mt-4 dark:bg-black dark:text-white bg-[#F5EDDD] text-gray-800">
+              <p className="mt-4 dark:bg-[#1B1B1E] dark:text-white bg-[#F5EDDD] text-gray-800">
                 {" "}
                 I have had the pleasure of working at various tech companies
                 such as

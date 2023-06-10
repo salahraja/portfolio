@@ -4,17 +4,20 @@ import Link from "next/link";
 
 function NavBar() {
   return (
-    <div className="flex flex-row justify-center h-full z-10">
-      <nav className="font-sans flex fixed py-2 px-6 bg-[#F5EDDD] dark:bg-zinc-800/30 bg-opacity-40 backdrop-blur-sm rounded-b-lg shadow sm:items-baseline h-[9vh] w-5/6">
+    <div className="flex flex-row justify-center">
+      <nav className="font-sans flex fixed py-2 px-6 bg-[#F5EDDD] dark:bg-zinc-800/30 bg-opacity-40 backdrop-blur-sm rounded-b-lg shadow sm:items-baseline w-[90%] pl-[22px]">
         <div className="grid grid-cols-3 font-semibold w-full text-center">
           <div className="h-[6vh] ml-auto flex col-auto w-auto  whitespace-nowrap font-semibold">
+            <Link href={"/"}>
+              <div className="pt-[14.5px] flex"></div>
+            </Link>{" "}
             <div className="flex justify-center w-[80.5vw] ">
-              <div className="text-black dark:text-white space-x-3 pt-[11.5px] h-[22vh] w-full align-center max-[631px]:relative max-[631px]:top-[-2rem] max-[631px]:pb-10">
+              <div className="text-black dark:text-white space-x-3 pt-[17.5px]  w-full align-center xl:pl-[13rem] max-[1140px]:text-white md:pl-[6rem]">
                 <Link href={"/about"}>About Me</Link>
                 <Link href={"/projects"}>Projects</Link>
               </div>
-              <div className=" flex flex-row items-center">
-                <div className="flex mr-5">
+              <div className=" flex flex-row flex-end items-center">
+                <div className="px-2 flex flex-row flex-end -ml-10">
                   <div className="mr-2">
                     <Link href={"https://www.linkedin.com/in/salahraja/"}>
                       <Image
