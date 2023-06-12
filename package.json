@@ -15,6 +15,7 @@
     "@types/react-dom": "18.2.4",
     "antd": "^5.5.2",
     "background-video": "^2.0.1",
+    "clsx": "^1.2.1",
     "drive-in": "^1.5.2",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
