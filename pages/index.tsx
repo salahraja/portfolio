@@ -33,46 +33,34 @@ const Home = () => {
           {" "}
           <NavBar />
         </div>{" "}
-        <Link href={"/"}>
-          {" "}
-          <div className="col-span-1">
-            <div className="max-[640px]:mt-[4px] max-[640px]:w-[6vw] sm:max-w-[4vw] md:max-w-[8vw]">
-              <Image
-                src="/clearsalah.png"
-                alt="Hand drawn full body avatar of me in hoody & jeans with glasses & Kufi"
-                width={80}
-                height={145}
-              />
-            </div>
-          </div>{" "}
-        </Link>{" "}
+        <div className="col-span-1">
+          <div className="max-[640px]:mt-[4px] max-[640px]:w-[6vw] sm:max-w-[4vw] md:max-w-[8vw]">
+            <Image
+              src="/clearsalah.png"
+              alt="Hand drawn full body avatar of me in hoody & jeans with glasses & Kufi"
+              width={80}
+              height={145}
+            />
+          </div>
+        </div>{" "}
         <div className="">
           {" "}
           <div className="w-screen xs:h-[550px] lg:h-[220px] md:h-[200px] sm:-mt-[91px] md:-m-[144px]"></div>
           <div className="text-center mt-8">
             <div className="pl-6">
               <h1 className="text-4xl text-center mb-2 font-bold tracking-tight dark:text-[#f5f5f5] text-[#353935] sm:text-5xl md:text-6xl min-[767.8px]:pt[1rem] max-[767.8px]:mt-[1rem] max-[730px]:pt-[7.5rem] min-[668px]:mt-[5px] -mt-[111px] min-[168px]:-mt-[11rem]">
-                <h2 className="max-[640px]:pt-[9.7vh] block xl:inline motion-safe:animate-fadeIn dark:text-[#f5f5f5]">
+                <h2 className="max-[640px]:pt-[9.7vh] block xl:inline motion-safe:animate-fadeIn">
                   Assalaamalaikum & hello!
                 </h2>{" "}
                 <span className="block pt-10 text-[#353935] dark:text-[#f5f5f5]">
                   I&apos;m Salah & I build in
-                  <div className="inline text-black"> :</div>
+                  <div className="inline text-white dark:text-black"> :</div>
                 </span>
                 <TypeWriter />
               </h1>
             </div>
-            <div className="text-center mx-auto max-w-sm text-base text-gray-900 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
-              <div className="inline text-light dark:text-[#f5f5f5]">
-                &quot;Michael always says K-I-S-S. Keep it simple, stupid.&quot;
-              </div>
-            </div>
-            <div className="dark:text-[#f5f5f5] text-[#353935]">
-              <div className="dark:text-[#f5f5f5] text-[#353935] inline">
-                {"— "}{" "}
-              </div>
-              Dwight K. Schrute
-            </div>
+            <div className="text-center mx-auto max-w-sm text-base text-gray-900 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl"></div>
+
             <div className="mt-8 px-4">
               <p className="text-lg text-gray-900 dark:text-white whitespace-pre-wrap tracking-wide leading-snug font-extralight sm:text-xl md:text-2xl lg:text-3xl">
                 Welcome to my portfolio website! I am a junior software engineer

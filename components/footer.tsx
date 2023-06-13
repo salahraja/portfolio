@@ -24,11 +24,10 @@ export default function Footer() {
 
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm text-gray-800 dark:text-white">
-                I&apos;m a Frontend Developer with 2 years experience. I was
-                born in Pakistan & moved to the US at 4 years old. I grew up in
-                Chicago&apos;s inner city before moving to the suburbs where I
-                am now. I love Pokemon, I LOVE The Office, and most importantly
-                I love technology!
+                I&apos;m a Frontend Developer with 2 years experience. I grew up
+                in Chicago&apos;s inner city before moving to the suburbs where
+                I am now. I love Pokemon, I LOVE The Office, and most
+                importantly I love technology!
               </p>
               <p className="mt-4 text-sm text-gray-800 dark:text-white">
                 I first coded in Java at about 11 years old. Since then
