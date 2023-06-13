@@ -1,10 +1,9 @@
-import NewCard from "../components/card";
 import React, { useState, useEffect } from "react";
 import Footer from "../components/footer";
 import NavBarTwo from "../components/nav2";
-import Head from "next/head";
+import Image from "next/image";
 
-const Projects = () => {
+const About = () => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
@@ -14,20 +13,88 @@ const Projects = () => {
   return (
     <>
       <div className="pb-[6rem] dark:bg-[#1B1B1E] bg-[#F5EDDD]">
-        <span className="">
-          <NavBarTwo />
-        </span>
+        <NavBarTwo />
       </div>
-      <div className="dark:bg-[#1B1B1E] bg-[#F5EDDD]">
-        <h1 className="text-4xl pl-2 font-bold  text-[#58A4B0] sm:text-5xl md:text-6xl">
-          <span className="block xl:inline">My</span>{" "}
-          <span className="block text-gray-900 dark:text-white">Projects.</span>
-        </h1>
-        <NewCard />
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 dark:bg-[#1B1B1E]">
+        {/* First Card */}
+        <div className="bg-white dark:bg-[#1B1B1E] border border-gray-200 rounded-lg shadow-md">
+          <div className="relative">
+            <Image
+              src="/singlselect.png"
+              alt="Multi-Step Registration"
+              width={690}
+              height={445}
+              className="rounded-t-lg"
+            />
+          </div>
+          <div className="p-5">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Multi-Step Registration
+            </h5>
+            <p className="mb-3 text-gray-700 dark:text-gray-400">
+              Using Vite with TypeScript and React, I have created a multi-step
+              and multi-selection form for registration.
+            </p>
+            <div className="flex items-center">
+              Link
+              <svg
+                aria-hidden="true"
+                className="w-4 h-4 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        {/* Second Card */}
+        <div className="bg-white dark:bg-[#1B1B1E] border border-gray-200 rounded-lg shadow-md">
+          <div className="relative">
+            <Image
+              src="/serieasite.png"
+              alt="Serie A website"
+              width={690}
+              height={445}
+              className="rounded-t-lg"
+            />
+          </div>
+          <div className="p-5">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Serie A website
+            </h5>
+            <p className="mb-3 text-gray-700 dark:text-gray-400">
+              Using Next.js and Tailwind CSS with TypeScript and React, I have
+              created a website to track the table and latest match fixtures for
+              Italys top football league, Serie A.
+            </p>
+            <div className="flex items-center">
+              Link
+              <svg
+                aria-hidden="true"
+                className="w-4 h-4 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer />
     </>
   );
 };
 
-export default Projects;
+export default About;
