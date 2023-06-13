@@ -10,7 +10,15 @@ import TypeWriter from "../components/typewriter";
 const Home = () => {
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    setMounted(true);
+
+    // Remove the default margin and padding from body and html
+    document.body.style.margin = "0";
+    document.body.style.padding = "0";
+    document.documentElement.style.margin = "0";
+    document.documentElement.style.padding = "0";
+  }, []);
 
   if (!mounted) return null;
 
@@ -20,15 +28,15 @@ const Home = () => {
         <title>Salah&apos;s Website</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="dark:bg-[#1B1B1E] bg-[#F5EDDD] max-[1100px]:font-bold">
-        <div className="">
+      <div className="dark:bg-[#1B1B1E] bg-[#F5EDDD] max-[1100px]:font-bold z-10">
+        <div className="pt-10">
           {" "}
           <NavBar />
         </div>{" "}
         <Link href={"/"}>
           {" "}
-          <div className="col-span-1 mt-[1rem]">
-            <div className="max-[640px]:h-[1px] max-[640px]:w-[4vw] sm:max-w-[4vw] md:max-w-[8vw]">
+          <div className="col-span-1">
+            <div className="max-[640px]:mt-[4px] max-[640px]:w-[6vw] sm:max-w-[4vw] md:max-w-[8vw]">
               <Image
                 src="/clearsalah.png"
                 alt="Hand drawn full body avatar of me in hoody & jeans with glasses & Kufi"
@@ -43,13 +51,13 @@ const Home = () => {
           <div className="w-screen xs:h-[550px] lg:h-[220px] md:h-[200px] sm:-mt-[91px] md:-m-[144px]"></div>
           <div className="text-center mt-8">
             <div className="pl-6">
-              <h1 className="text-4xl text-center mb-2 font-bold tracking-tight dark:text-[#f5f5f5] text-[#353935] sm:text-5xl md:text-6xl min-[767.8px]:pt[7rem] max-[767.8px]:mt-[7rem] max-[730px]:pt-[7.5rem] min-[168px]:text-white min-[68px]:text-green-500 min-[68px]:pt-[1rem]">
-                <h2 className="max-[640px]:pt-[9.7vh] block xl:inline motion-safe:animate-fadeIn">
+              <h1 className="text-4xl text-center mb-2 font-bold tracking-tight dark:text-[#f5f5f5] text-[#353935] sm:text-5xl md:text-6xl min-[767.8px]:pt[1rem] max-[767.8px]:mt-[1rem] max-[730px]:pt-[7.5rem] min-[668px]:mt-[5px] -mt-[111px] min-[168px]:-mt-[11rem]">
+                <h2 className="max-[640px]:pt-[9.7vh] block xl:inline motion-safe:animate-fadeIn dark:text-[#f5f5f5]">
                   Assalaamalaikum & hello!
                 </h2>{" "}
-                <span className="block pt-10">
+                <span className="block pt-10 text-[#353935] dark:text-[#f5f5f5]">
                   I&apos;m Salah & I build in
-                  <div className="inline text-black">.</div>
+                  <div className="inline text-black"> :</div>
                 </span>
                 <TypeWriter />
               </h1>

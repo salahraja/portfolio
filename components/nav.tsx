@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import clsx from "clsx";
 
 function NavBar() {
   const [windowWidth, setWindowWidth] = useState<number | undefined>(undefined);
@@ -23,61 +22,60 @@ function NavBar() {
     };
   }, []);
 
-  const linkClass = clsx(
-    "text-black dark:text-white space-x-3 pt-[17.5px] w-full align-center",
-    {
-      "xl:pl-[13rem] max-[1140px]:text-white  pl-[11.5rem]":
-        windowWidth && windowWidth > 640,
+  const getButtonSize = () => {
+    if (windowWidth && windowWidth <= 487.8) {
+      return { width: 20, height: 30 };
+    } else if (windowWidth && windowWidth <= 767.8) {
+      return { width: 30, height: 45 };
+    } else {
+      return { width: 50, height: 55 };
     }
-  );
+  };
+
+  const buttonSize = getButtonSize();
 
   return (
-    <div className="flex flex-row justify-center">
-      <nav className="font-sans flex fixed py-2 px-6 bg-[#F5EDDD] dark:bg-zinc-800/30 bg-opacity-40 backdrop-blur-sm rounded-b-lg shadow sm:items-baseline w-[90%] pl-[22px]">
-        <div className="grid grid-cols-3 font-semibold w-full text-center">
-          <div className="h-[6vh] ml-auto flex col-auto w-auto  whitespace-nowrap font-semibold">
+    <div className="fixed inset-x-0 mx-auto w-5/6 flex-1 justify-center z-10">
+      <nav className="font-sans bg-[#F5EDDD] dark:bg-zinc-800/30 bg-opacity-40 backdrop-blur-sm rounded-b-lg shadow">
+        <div className="mx-auto text-center">
+          <div className="h-[8vh] space-y-2 ml-auto w-auto whitespace-nowrap font-semibold">
             <Link href={"/"}>
-              <div className="pt-[14.5px] flex"></div>
+              <div className="pt-[13.5px]"></div>
             </Link>{" "}
-            <div className="flex justify-center w-[80.5vw] ">
-              <div className="text-black dark:text-white space-x-3 pt-[17.5px]  w-full align-center xl:pl-[13rem] max-[767.8px]:text-blue-500 max-[767.8px]:mr-[5.5rem] md:pl-[6rem] max-[768px]:text-red-500  pl-[11.5rem]">
-                <Link href={"/about"}>About Me</Link>
-                <Link href={"/projects"}>Projects</Link>
-              </div>
-              <div className="flex flex-row justify-end items-center max-w-[767.8px] ml-[9.8rem]">
-                <div className="px-2 flex flex-row justify-end ml-[4.5rem]">
-                  <div className="mr-2">
-                    <Link href="https://www.linkedin.com/in/salahraja/">
-                      <Image
-                        src="/linkedin.svg"
-                        alt="LinkedIn logo"
-                        width={50}
-                        height={55}
-                        className="invert dark:invert-0"
-                        style={{
-                          fill: "transparent",
-                          mixBlendMode: "multiply",
-                        }}
-                      />
-                    </Link>
-                  </div>
-                  <div>
-                    <Link href="https://github.com/salahraja">
-                      <Image
-                        src="/github.svg"
-                        alt="Github logo"
-                        width={50}
-                        height={55}
-                        className="invert dark:invert-0"
-                        style={{
-                          fill: "transparent",
-                          mixBlendMode: "multiply",
-                        }}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              </div>
+            <div className="w-[80.5vw] h-10 space-x-5 dark:text-white text-[#353935] space-y-2">
+              <div className=""></div>
+              <Link href={"/about"}>About Me</Link>
+              <Link href={"/projects"}>Projects</Link>
+              <button className="w-5 flex-1">
+                <Link href="https://www.linkedin.com/in/salahraja/">
+                  <Image
+                    src="/linkedin.svg"
+                    alt="LinkedIn logo"
+                    width={buttonSize.width}
+                    height={buttonSize.height}
+                    className="invert dark:invert-0 inline-flex"
+                    style={{
+                      fill: "transparent",
+                      mixBlendMode: "multiply",
+                    }}
+                  />
+                </Link>
+              </button>
+              <button className=" w-5 h-2">
+                <Link href="https://github.com/salahraja">
+                  <Image
+                    src="/github.svg"
+                    alt="Github logo"
+                    width={buttonSize.width}
+                    height={buttonSize.height}
+                    className="invert dark:invert-0 inline-flex"
+                    style={{
+                      fill: "transparent",
+                      mixBlendMode: "multiply",
+                    }}
+                  />
+                </Link>
+              </button>
             </div>
           </div>
         </div>
