@@ -48,7 +48,7 @@ const Home = () => {
           <div className="w-screen xs:h-[550px] lg:h-[220px] md:h-[200px] sm:-mt-[91px] md:-m-[144px]"></div>
           <div className="text-center mt-8">
             <div className="pl-6">
-              <h1 className="text-4xl text-center mb-2 font-bold tracking-tight dark:text-[#f5f5f5] text-[#353935] sm:text-5xl md:text-6xl min-[767.8px]:pt[1rem] max-[767.8px]:mt-[1rem] max-[730px]:pt-[7.5rem] min-[668px]:mt-[5px] -mt-[111px] min-[168px]:-mt-[11rem]">
+              <h1 className="text-4xl text-center mb-2 pr-5 font-bold tracking-tight dark:text-[#f5f5f5] text-[#353935] sm:text-5xl md:text-6xl min-[767.8px]:pt[1rem] max-[767.8px]:mt-[1rem] max-[730px]:pt-[7.5rem] min-[668px]:mt-[5px] -mt-[111px] min-[168px]:-mt-[11rem]">
                 <h2 className="max-[640px]:pt-[9.7vh] block xl:inline motion-safe:animate-fadeIn">
                   Assalaamalaikum & hello!
                 </h2>{" "}
