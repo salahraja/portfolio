@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@better-scroll/indicators": "^2.5.1",
     "@next/font": "^13.4.4",
     "@types/node": "20.2.5",
     "@types/react": "18.2.8",
@@ -26,6 +27,7 @@
     "react-dom": "^18.2.0",
     "react-iframe": "^1.8.5",
     "react-scripts": "^5.0.1",
+    "react-scroll-parallax": "^3.4.2",
     "tailwind-typewriter": "^1.0.1",
     "typed.js": "^2.0.16"
   },
