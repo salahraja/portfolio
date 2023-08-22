@@ -2,144 +2,171 @@ import React, { useState, useEffect } from "react";
 import Footer from "../components/footer";
 import NavBarTwo from "../components/nav2";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/router";
 
-const About = () => {
+const Project = () => {
   const [mounted, setMounted] = useState(false);
+  const router = useRouter();
 
   useEffect(() => setMounted(true), []);
 
   if (!mounted) return null;
+
+  // Dummy data for additional cards
+  const cards = [
+    {
+      id: 1,
+      imageSrc: "/nuxtos.png",
+      title: "NuxtOS",
+      skills: "Nuxt.js",
+      skills2: "Vue",
+      skills3: "Typescript",
+      skills4: "TailwindCSS",
+      skills5: "pnpm",
+      skills6: "webpack",
+      skills7: "vite",
+      price: "Nuxt.js + Vue + Typescript + TailwindCSS",
+      ratingsLink: "https://nuxt-os.vercel.app/",
+    },
+    {
+      id: 2,
+      imageSrc: "/npmer.png",
+      title: "npmer",
+      skills: "NextUI",
+      skills2: "TailwindCSS",
+      skills3: "Typescript",
+      skills4: "Supabase",
+      skills5: "Stitches",
+      skills6: "Next.js",
+      skills7: "Hanoki auth",
+      price: "Nuxt.js + Vue + Typescript + TailwindCSS",
+      ratingsLink: "https://npmer.vercel.app/",
+    },
+    // Add more cards here
+    {
+      id: 3,
+
+      imageSrc: "/seriea.png",
+      title: "Serie A table",
+      skills: "Next.js",
+      skills2: "TailwindCSS",
+      skills3: "Typescript",
+      skills4: "RapidAPI",
+      skills5: "React",
+      skills6: "Postman",
+      price: "Nuxt.js + Vue + Typescript + TailwindCSS",
+      ratingsLink: "https://football-scores-seven.vercel.app/",
+    },
+    {
+      id: 4,
+      imageSrc: "/weather.png",
+      title: "Weather or Not",
+      skills: "Vue",
+      skills2: "Vite",
+      skills3: "Typescript",
+      skills4: "TailwindCSS",
+      skills5: "pnpm",
+      skills6: "webpack",
+      skills7: "Vue router",
+      price: "Nuxt.js + Vue + Typescript + TailwindCSS",
+      ratingsLink: "https://weatherornot.vercel.app/", // Internal link
+    },
+    {
+      id: 5,
+      imageSrc: "/singleselect.png",
+      title: "Multi Select form",
+      skills: "Vite",
+      skills2: "React",
+      skills3: "Typescript",
+      skills4: "TailwindCSS",
+      skills5: "pnpm",
+      skills6: "Express.js",
+      skills7: "vue",
+      price: "Nuxt.js + Vue + Typescript + TailwindCSS",
+      ratingsLink: "https://darling-longma-eb7d58.netlify.app/", // Internal link
+    },
+    {
+      id: 6,
+      imageSrc: "https://source.unsplash.com/random/350x355",
+      title: "Card 6",
+      skills: "Vite",
+      skills2: "React",
+      skills3: "Typescript",
+      skills4: "TailwindCSS",
+      skills5: "pnpm",
+      skills6: "webpack",
+      skills7: "vite",
+      price: "Nuxt.js + Vue + Typescript + TailwindCSS",
+      ratingsLink: "/card6-link", // Internal link
+    },
+  ];
+
+  const handleCardClick = (link: string | URL) => {
+    if (typeof link === "string") {
+      if (link.startsWith("http")) {
+        // External link
+        window.open(link, "_blank");
+      } else {
+        // Internal link
+        router.push(link);
+      }
+    }
+  };
 
   return (
     <>
       <div className="pb-[6rem] dark:bg-[#1B1B1E] bg-[#F5EDDD]">
         <NavBarTwo />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 dark:bg-[#1B1B1E]">
-        {/* First Card */}
-        <div className="bg-white dark:bg-[#1B1B1E] border border-gray-200 rounded-lg mb-[106px] shadow-md">
-          <div className="relative w-full">
-            <Image
-              src="/serieasite.png"
-              alt="Serie A website"
-              width={1060}
-              height={445}
-              className="rounded-t-lg"
-            />
-          </div>
-          <div className="p-5 mt-[22px]">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Serie A website
-            </h5>
-            <p className="mb-3 text-gray-700 dark:text-gray-400">
-              Using Next.js and Tailwind CSS with TypeScript and React, I have
-              created a website to track the table and latest match fixtures for
-              Italys top football league, Serie A.
-            </p>
-            <div className="flex items-center dark:invert">
-              Link
-              <Link
-                href={"https://football-scores-seven.vercel.app/"}
-                target={"_blank"}
-              >
-                <svg
-                  aria-hidden="true"
-                  className="w-4 h-4 ml-2 -mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
+      <div className="dark:bg-[#1B1B1E] bg-[#F5EDDD] mx-auto px-4 drop-shadow-2xl">
+        {/* Set a max width and center the content */}
+        <div className="antialiased text-gray-900">
+          <div className="max-w-screen-xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* Render all cards */}
+              {cards.map((card) => (
+                <div
+                  key={card.id}
+                  className="max-w-md mx-auto"
+                  onClick={() => handleCardClick(card.ratingsLink)}
+                  style={{ cursor: "pointer" }}
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-        {/* Second Card */}
-        <div className="bg-white dark:bg-[#1B1B1E] border border-gray-200 rounded-lg mb-[106px] shadow-md">
-          <div className="relative w-full">
-            <Image
-              src="/npmer.png"
-              alt="Serie A website"
-              width={1060}
-              height={445}
-              className="rounded-t-lg"
-            />
-          </div>
-          <div className="p-5 mt-[22px]">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Npmer
-            </h5>
-            <p className="mb-3 text-gray-700 dark:text-gray-400">
-              Using Next.js and Tailwind CSS with TypeScript and React, I have
-              created a website to track the table and latest match fixtures for
-              Italys top football league, Serie A.
-            </p>
-            <div className="flex items-center dark:invert">
-              Link
-              <Link href={"https://npmer.vercel.app/"} target={"_blank"}>
-                <svg
-                  aria-hidden="true"
-                  className="w-4 h-4 ml-2 -mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="bg-white h-auto dark:bg-[#1B1B1E] border border-gray-200 rounded-lg shadow-md">
-          <div className="relative">
-            <Image
-              src="/singlselect.png"
-              alt="Multi-Step Registration"
-              width={690}
-              height={495}
-              className="rounded-t-lg"
-            />
-          </div>
-          <div className="p-5">
-            <div className="pt-[6rem]">
-              <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Multi-Step Registration
-              </h5>
-              <p className="mb-3 text-gray-700 dark:text-gray-400">
-                Using Vite with TypeScript and React, I have created a
-                multi-step and multi-selection form for registration.
-              </p>
-            </div>
-            <div className="flex items-center dark:invert">
-              Link
-              <Link
-                href={"https://darling-longma-eb7d58.netlify.app/"}
-                target={"_blank"}
-              >
-                <svg
-                  aria-hidden="true"
-                  className="w-4 h-4 ml-2 -mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </Link>
+                  <Image
+                    src={card.imageSrc}
+                    alt="random image"
+                    className="w-full object-cover object-center rounded-lg shadow-md"
+                    height={350}
+                    width={350}
+                  />
+                  <div className="relative px-4 -mt-16">
+                    <div className="bg-white p-6 rounded-lg shadow-2xl">
+                      <div className="flex items-baseline">
+                        <span className="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full font-semibold tracking-wide">
+                          New
+                        </span>
+                        <div className="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
+                          {card.skills} &bull; {card.skills2} &bull;{" "}
+                          {card.skills3} &bull; {card.skills4} &bull;{" "}
+                          {card.skills5} &bull; {card.skills6} &bull;{" "}
+                          {card.skills7}
+                        </div>
+                      </div>
+                      <h4 className="mt-1 text-xl font-semibold  leading-tight truncate">
+                        {card.title}
+                      </h4>
+                      <div className="mt-1">
+                        {card.price}
+                        <span className="text-gray-600 text-sm"></span>
+                      </div>
+                      <div className="mt-4">
+                        <span className="text-teal-600 text-md font-semibold">
+                          Link
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -149,4 +176,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Project;
