@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Salah&apos;s Website</title>
+        <title>Salah&apos;s Portfolio</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className="dark:bg-[#1B1B1E] bg-[#F5EDDD] max-[1100px]:font-bold z-10">
