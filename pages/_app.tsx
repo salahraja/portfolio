@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }: AppProps) {
   <>
@@ -15,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
     </Head>
     {/* Add the favicon */}
     {/* Note that the path doesn't include "public" */}
-
+    <Analytics />
     <Component {...pageProps} />
   </>;
   return <Component {...pageProps} />;
