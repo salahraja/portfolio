@@ -38,11 +38,11 @@ function NavBar() {
     <div className="fixed inset-x-0 mx-auto w-5/6 flex-1 justify-center z-10">
       <nav className="font-sans bg-[#F5EDDD] dark:bg-zinc-800/30 bg-opacity-40 backdrop-blur-sm rounded-lg shadow">
         <div className="mx-auto text-center">
-          <div className="sm:h-[6.7vh] phone:h-[11vh] space-y-2 ml-auto w-auto whitespace-nowrap font-semibold">
+          <div className="sm:h-[5rem] phone:h-[4.5rem] space-y-2 ml-auto  pt-1  w-auto whitespace-nowrap font-semibold">
             <Link href={"/"}>
               <div className="pt-[13.5px]"></div>
             </Link>{" "}
-            <div className="w-[80.5vw] h-10 space-x-5 dark:text-white text-[#353935] -space-y-2">
+            <div className="w-[80.5vw] h-10 phone:pb-5 space-x-5 dark:text-white text-[#353935] -space-y-2">
               <div className=""></div>
               <Link href={"/about"}>About Me</Link>
               <Link href={"/projects"}>Projects</Link>
