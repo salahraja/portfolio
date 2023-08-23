@@ -11,6 +11,7 @@ function TypeWriter() {
         "Typescript.",
         "&amp; TailwindCSS.",
         "&amp; Next.js.",
+        "&amp; Vue.",
         "&amp; React.",
         "The <i>web</i>.",
       ],
