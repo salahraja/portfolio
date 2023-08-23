@@ -3,6 +3,8 @@ import Footer from "../components/footer";
 import NavBarTwo from "../components/nav2";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Project = () => {
   const [mounted, setMounted] = useState(false);
@@ -25,8 +27,8 @@ const Project = () => {
       skills5: "pnpm",
       skills6: "webpack",
       skills7: "vite",
-      price: "Nuxt.js + Vue + Typescript + TailwindCSS",
       ratingsLink: "https://nuxt-os.vercel.app/",
+      isNew: true, // Add the isNew property
     },
     {
       id: 2,
@@ -39,13 +41,12 @@ const Project = () => {
       skills5: "Stitches",
       skills6: "Next.js",
       skills7: "Hanoki auth",
-      price: "Nuxt.js + Vue + Typescript + TailwindCSS",
       ratingsLink: "https://npmer.vercel.app/",
+      isNew: false, // Add the isNew property
     },
     // Add more cards here
     {
       id: 3,
-
       imageSrc: "/seriea.png",
       title: "Serie A table",
       skills: "Next.js",
@@ -54,8 +55,8 @@ const Project = () => {
       skills4: "RapidAPI",
       skills5: "React",
       skills6: "Postman",
-      price: "Nuxt.js + Vue + Typescript + TailwindCSS",
       ratingsLink: "https://football-scores-seven.vercel.app/",
+      isNew: false, // Add the isNew property
     },
     {
       id: 4,
@@ -68,11 +69,25 @@ const Project = () => {
       skills5: "pnpm",
       skills6: "webpack",
       skills7: "Vue router",
-      price: "Nuxt.js + Vue + Typescript + TailwindCSS",
-      ratingsLink: "https://weatherornot.vercel.app/", // Internal link
+      ratingsLink: "https://weatherornot.vercel.app/",
+      isNew: true, // Add the isNew property
     },
     {
       id: 5,
+      imageSrc: "/halfdark.png",
+      title: "This site, yes..hi.",
+      skills: "Next.js",
+      skills2: "React",
+      skills3: "Typescript",
+      skills4: "TailwindCSS",
+      skills5: "npm",
+      skills6: "webpack",
+      skills7: "git",
+      ratingsLink: "https://www.salahs.org/",
+      isNew: false,
+    },
+    {
+      id: 6,
       imageSrc: "/singleselect.png",
       title: "Multi Select form",
       skills: "Vite",
@@ -82,22 +97,8 @@ const Project = () => {
       skills5: "pnpm",
       skills6: "Express.js",
       skills7: "vue",
-      price: "Nuxt.js + Vue + Typescript + TailwindCSS",
-      ratingsLink: "https://darling-longma-eb7d58.netlify.app/", // Internal link
-    },
-    {
-      id: 6,
-      imageSrc: "https://source.unsplash.com/random/350x355",
-      title: "Card 6",
-      skills: "Vite",
-      skills2: "React",
-      skills3: "Typescript",
-      skills4: "TailwindCSS",
-      skills5: "pnpm",
-      skills6: "webpack",
-      skills7: "vite",
-      price: "Nuxt.js + Vue + Typescript + TailwindCSS",
-      ratingsLink: "/card6-link", // Internal link
+      ratingsLink: "https://darling-longma-eb7d58.netlify.app/",
+      isNew: false,
     },
   ];
 
@@ -140,10 +141,12 @@ const Project = () => {
                   />
                   <div className="relative px-4 -mt-16">
                     <div className="bg-white p-6 rounded-lg shadow-2xl">
-                      <div className="flex items-baseline">
+                      {card.isNew && ( // Conditionally render the "New" bubble
                         <span className="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full font-semibold tracking-wide">
                           New
                         </span>
+                      )}
+                      <div className="flex items-baseline">
                         <div className="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
                           {card.skills} &bull; {card.skills2} &bull;{" "}
                           {card.skills3} &bull; {card.skills4} &bull;{" "}
@@ -155,7 +158,6 @@ const Project = () => {
                         {card.title}
                       </h4>
                       <div className="mt-1">
-                        {card.price}
                         <span className="text-gray-600 text-sm"></span>
                       </div>
                       <div className="mt-4">
