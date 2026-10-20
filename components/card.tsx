@@ -48,7 +48,7 @@ const NewCard = () => {
         </div>
       </div>
       <div className="border border-gray-200 rounded-lg shadow-md flex flex-col p-8 bg-[#F5EDDD] dark:bg-[#1B1B1E]">
-        <Link href="https://football-scores-seven.vercel.app/" passHref>
+        <Link href="https://github.com/salahraja/football-scores" passHref>
           <div>
             <Image
               src="/serieasite.png"
@@ -60,7 +60,7 @@ const NewCard = () => {
           </div>
         </Link>
         <div className="p-5">
-          <Link href="https://football-scores-seven.vercel.app/" passHref>
+          <Link href="https://github.com/salahraja/football-scores" passHref>
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white cursor-pointer">
               Serie A website
             </h5>
@@ -70,7 +70,7 @@ const NewCard = () => {
             made a website tracking the table and latest match fixtures for
             Italys top football league, Serie A.
           </p>
-          <Link href="https://football-scores-seven.vercel.app/" passHref>
+          <Link href="https://github.com/salahraja/football-scores" passHref>
             <div className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#58A4B0] rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 cursor-pointer">
               Link
               <svg
