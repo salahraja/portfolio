@@ -27,7 +27,7 @@ const Project = () => {
       skills5: "pnpm",
       skills6: "webpack",
       skills7: "vite",
-      ratingsLink: "https://nuxt-os.vercel.app/",
+      ratingsLink: "https://github.com/salahraja/NuxtOS",
       isNew: true, // Add the isNew property
     },
     {
@@ -41,7 +41,7 @@ const Project = () => {
       skills5: "Stitches",
       skills6: "Next.js",
       skills7: "Hanoki auth",
-      ratingsLink: "https://npmer.vercel.app/",
+      ratingsLink: "https://github.com/salahraja/npmer",
       isNew: false, // Add the isNew property
     },
     // Add more cards here
@@ -55,7 +55,7 @@ const Project = () => {
       skills4: "RapidAPI",
       skills5: "React",
       skills6: "Postman",
-      ratingsLink: "https://football-scores-seven.vercel.app/",
+      ratingsLink: "https://github.com/salahraja/football-scores",
       isNew: false, // Add the isNew property
     },
     {
@@ -69,7 +69,7 @@ const Project = () => {
       skills5: "pnpm",
       skills6: "webpack",
       skills7: "Vue router",
-      ratingsLink: "https://weatherornot.vercel.app/",
+      ratingsLink: "https://github.com/salahraja/weatherornot",
       isNew: true, // Add the isNew property
     },
     {
